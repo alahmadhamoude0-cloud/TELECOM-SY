@@ -1,0 +1,15 @@
+---
+
+## ⚙️ إعداد Firebase
+1. أنشئ مشروع جديد في [Firebase Console](https://console.firebase.google.com).
+2. فعّل **Authentication** و **Firestore Database**.
+3. حمّل ملف `google-services.json` وضعه داخل مجلد `app/`.
+
+---
+
+## 🔧 إعداد Gradle
+في ملف `app/build.gradle` أضف:
+```gradle
+implementation 'com.google.firebase:firebase-auth:22.3.0'
+implementation 'com.google.firebase:firebase-firestore:24.9.1'
+implementation 'androidx.recyclerview:recyclerview:1.3.2'
